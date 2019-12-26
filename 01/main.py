@@ -4,11 +4,14 @@ cat = [75592, 56081, 141375, 103651, 132375, 90584, 94148, 85029, 95082, 148499,
 
 
 def fuel_rocket():
-    get_fuel_by_mass(100756)
+    kitten = 0
+    for mass in cat:
+        kitten = kitten+    get_fuel_by_mass(mass)
+    print(kitten)
 
 
 def get_fuel_by_mass(mass):
-    print(math.floor(mass/3)-2)
+    return math.floor(mass/3)-2
 
 
 fuel_rocket()
